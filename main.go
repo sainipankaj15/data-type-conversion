@@ -35,6 +35,22 @@ func StringToInt64(input string) int64 {
 	return intValue
 }
 
+func Int64ToString(input int64) string {
+	return strconv.FormatInt(input, 10)
+}
+
 func IntToFloat64(i int) float64 {
 	return float64(i)
+}
+
+func Float64ToInt(f float64) int {
+	return int(f)
+}
+
+func Int64ToInt(i64 int64) int {
+	return int(i64)
+}
+
+func IntToInt64(i int) int64 {
+	return int64(i)
 }
