@@ -1,6 +1,9 @@
 package easyconversion
 
-import "strconv"
+import (
+	"strconv"
+	"strings"
+)
 
 // Note : First letter of every funciton will be captial as we are exporting the functions
 func StringToFloat64(input string) float64 {
@@ -53,4 +56,9 @@ func Int64ToInt(i64 int64) int {
 
 func IntToInt64(i int) int64 {
 	return int64(i)
+}
+
+func ParseBool(value string) bool {
+	value = strings.ToLower(value)
+	return value == "true" || value == "1"
 }
