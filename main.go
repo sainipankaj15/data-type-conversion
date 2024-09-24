@@ -62,3 +62,11 @@ func ParseBool(value string) bool {
 	value = strings.ToLower(value)
 	return value == "true" || value == "1"
 }
+
+func StringToInt32(input string) int32 {
+	intValue, err := strconv.ParseInt(input, 10, 32)
+	if err != nil {
+		return 0
+	}
+	return int32(intValue)
+}
