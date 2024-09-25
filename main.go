@@ -70,3 +70,7 @@ func StringToInt32(input string) int32 {
 	}
 	return int32(intValue)
 }
+
+func Int32ToString(i int32) string {
+	return strconv.Itoa(int(i))
+}
